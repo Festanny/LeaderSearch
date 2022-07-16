@@ -20,6 +20,12 @@
     .product .info-block .block .price {
         margin-bottom: 10px;
     }
+    .cart .info-block .block .img {
+        margin-right: 50px;
+    }
+    .cart .info-block .block .imgDesc {
+        margin-right: 45px;
+    }
 }
 
 @media screen and (max-width: 930px) {

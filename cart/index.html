@@ -31,11 +31,11 @@
     </header>
 
     <main>
-        <div class="cart container">
+        <section class="cart container">
             <h1>Каталог товаров</h1>
             <div class="info-block">
                 <div class="block">
-                    <div class="flex aic flex1">
+                    <div class="imgDesc flex aic flex1">
                         <div class="img">
                             <img src="../image/product/image1.png" alt="">
                         </div>
@@ -54,9 +54,18 @@
                         </div>
                     </div>
                 </div>
-                <h1 class="sum">Сумма: 1650 ₽</h1>
+                <span class="sum">Сумма: 1650 ₽</span>
             </div>
-        </div>
+        </section>
+        <section class="form">
+            <form action="" method="POST">
+                <h2>Пожалуйста, представьтесь</h2>
+                <input type="text" placeholder="Ваше имя" name="name" onfocus="inputClick(0)" onblur="inputEmpty(0)">
+                <input type="tel" placeholder="Телефон" id="phone" name="phone" onfocus="inputClick(1)" onblur="inputEmpty(1)">
+                <input type="email" placeholder="Email" name="email" onfocus="inputClick(2)" onblur="inputEmpty(2)">
+                <input type="button" value="Оформить заказ">
+            </form>
+        </section>
     </main>
 
     <footer>
@@ -64,5 +73,8 @@
             <span>Тестовое задание на должность младшего программиста «Лидера поиска», ver. 3.0</span>
         </div>
     </footer>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="../js/script.js"></script>
 </body>
 </html>

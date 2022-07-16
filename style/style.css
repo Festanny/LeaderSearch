@@ -1,5 +1,6 @@
 :root {
     --bg: #ffffff;
+    --bg2: #F2F5F9;
     --blue: #296DC1;
     --green: #00A82D;
     --black: #000000;
@@ -7,6 +8,7 @@
     --border2: #A8AFBB;
     --white: #ffffff;
     --text: #35383A;
+    --focus: #4892EC;
 }
 
 * {
@@ -56,7 +58,12 @@ a:hover {
 }
 
 h1 {
+    font-size: 30px;
     margin: 0;
+}
+h2 {
+    margin: 0;
+    font-size: 26px;
 }
 
 header {
@@ -333,8 +340,56 @@ footer .footer {
     width: 100%;
     margin: 30px 47px 0 0;
     text-align: right;
+    font-weight: 700;
+    font-size: 30px;
+    display: block;
 }
 
 .addProduct {
     background-color: var(--green)!important;
+}
+
+.form {
+    background-color: var(--bg2);
+    margin-top: 60px;
+}
+
+input {
+    border-radius: 0;
+    outline: none;
+    border: 1px solid transparent;
+    background-color: var(--white);
+}
+input:focus,
+input:focus-visible {
+    border: 1px solid var(--focus);
+    border-radius: 0;
+}
+
+.form form {
+    width: 430px;
+    margin: 0 auto;
+    padding: 70px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.form input {
+    margin-top: 30px;
+    padding: 20px 26px;
+    font-size: 16px;
+}
+
+.form input:last-of-type {
+    background-color: var(--blue);
+    color: var(--white);
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+.form form h2 {
+    text-align: center;
 }
